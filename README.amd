@@ -1,1 +1,38 @@
+# AI-Driven Urban Heat Island Impact Platform
 
+This platform predicts and monitors the impact of urban heat islands using NASA’s Earth observation data, with a focus on health risks and sustainability for fast-growing cities.
+
+## Features
+
+- Ingest NASA Earth observation data for urban environments
+- Predict urban heat island intensity and affected areas
+- Assess health risks associated with heat islands
+- Provide sustainability metrics and intervention recommendations
+- Interactive visualization dashboard
+
+## Directory Structure
+
+- `backend/`: FastAPI backend and data/model utilities
+- `frontend/`: React frontend for visualization and dashboards
+- `notebook/`: Jupyter notebooks for exploratory analysis and modeling
+
+## Getting Started
+
+1. Install Python dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+2. Run the backend API:
+    ```bash
+    uvicorn backend.main:app --reload
+    ```
+3. Install frontend dependencies (`frontend/package.json`) and run the React app.
+
+## Data Sources
+
+- NASA Earthdata
+- Public health datasets
+
+## License
+
+MIT
