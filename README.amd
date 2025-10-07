@@ -1,38 +1,106 @@
 # AI-Driven Urban Heat Island Impact Platform
 
-This platform predicts and monitors the impact of urban heat islands using NASA’s Earth observation data, with a focus on health risks and sustainability for fast-growing cities.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Features
+An open-source platform that leverages NASA Earth observation data to analyze, predict, and visualize the impact of Urban Heat Islands (UHI), focusing on public health risks and sustainability in growing cities.
 
-- Ingest NASA Earth observation data for urban environments
-- Predict urban heat island intensity and affected areas
-- Assess health risks associated with heat islands
-- Provide sustainability metrics and intervention recommendations
-- Interactive visualization dashboard
+---
 
-## Directory Structure
+## 🏙️ The Problem
 
-- `backend/`: FastAPI backend and data/model utilities
-- `frontend/`: React frontend for visualization and dashboards
-- `notebook/`: Jupyter notebooks for exploratory analysis and modeling
+Urban Heat Islands are metropolitan areas that are significantly warmer than their surrounding rural areas due to human activities. This phenomenon can lead to increased energy consumption, elevated emissions of air pollutants, and compromised human health and comfort, particularly during heatwaves. This platform aims to provide city planners, public health officials, and researchers with data-driven insights to mitigate these effects.
 
-## Getting Started
+---
 
-1. Install Python dependencies:
-    ```bash
+## ✨ Features
+
+* **🛰️ NASA Data Ingestion**: Processes Earth observation data for urban environmental analysis.
+* **🧠 Predictive Modeling**: Predicts UHI intensity and identifies high-risk areas.
+* **🩺 Health Risk Assessment**: Analyzes the correlation between heat islands and public health metrics.
+* **📊 Interactive Dashboard**: A user-friendly React-based interface for visualizing data and model outputs on an interactive map.
+* **💡 Sustainability Insights**: Provides metrics and recommendations for urban planning and intervention.
+
+---
+
+## 🖼️ Screenshots
+
+*(Add a screenshot or a GIF of your dashboard here to show what your project looks like!)*
+
+![Platform Screenshot](URL_TO_YOUR_SCREENSHOT.png)
+
+---
+
+## 🛠️ Tech Stack
+
+* **Backend**: Python, FastAPI
+* **Frontend**: JavaScript, React, Mapbox GL
+* **Data Science**: Pandas, Scikit-learn, Jupyter
+* **Database**: PostgreSQL (or specify otherwise)
+* **Deployment**: Docker
+
+---
+
+## 🚀 Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+* Python 3.8+
+* Node.js v14+ and npm
+* Git
+
+### Installation
+
+1.  **Clone the repository:**
+    ```sh
+    git clone [https://github.com/sanwu2057-collab/AI-driven-platform.git](https://github.com/sanwu2057-collab/AI-driven-platform.git)
+    cd AI-driven-platform
+    ```
+
+2.  **Backend Setup:**
+    ```sh
+    # Navigate to the backend directory
+    cd backend
+
+    # Create and activate a virtual environment
+    python -m venv venv
+    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+    # Install dependencies
     pip install -r requirements.txt
+
+    # (Optional) Create a .env file for your environment variables
+    # cp .env.example .env
+
+    # Run the server
+    uvicorn main:app --reload
     ```
-2. Run the backend API:
-    ```bash
-    uvicorn backend.main:app --reload
+    The backend will be running at `http://127.0.0.1:8000`.
+
+3.  **Frontend Setup:**
+    ```sh
+    # Open a new terminal and navigate to the frontend directory
+    cd frontend
+
+    # Install dependencies
+    npm install
+
+    # Run the React app
+    npm start
     ```
-3. Install frontend dependencies (`frontend/package.json`) and run the React app.
+    The frontend will open in your browser at `http://localhost:3000`.
 
-## Data Sources
+---
 
-- NASA Earthdata
-- Public health datasets
+## 🤝 How to Contribute
 
-## License
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-MIT
+Please read our [**CONTRIBUTING.md**](CONTRIBUTING.md) file for details on our code of conduct and the process for submitting pull requests.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
